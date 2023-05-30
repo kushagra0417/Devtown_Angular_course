@@ -1,0 +1,17 @@
+.stylecolor{
+    background-color:red;
+}
+
+.stylesize{
+    width: 100px;
+    height: 100px;
+}
+
+.styleborder{
+    border: 2px soloid red;
+}
+
+.styleshape{
+    border-radius: 50%;
+}
+

@@ -1,0 +1,14 @@
+<p>Deatils of the User:<br /></p>
+User ID:{{ user.id }}<br />
+User Name:{{ user.name }}<br />
+User Email:{{ user.email }}<br />
+
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+<button class="btn btn-success" (click)="createUser()">Create User</button>&nbsp;&nbsp;
+<button class="btn btn-primary" (click)="updateUser()">Update User</button>&nbsp;&nbsp;
+<button class="btn btn-danger"(click)="deleteUser()">Delete User</button>&nbsp;&nbsp;
+<button class="btn btn-warning"(click)="getUsersPost()">Get User Post</button>&nbsp;&nbsp;
+
+
+<pre>{{post | async | json}}</pre>

@@ -1,0 +1,275 @@
+<!-- <label for="username">Username</label><br>
+<input type="text" name="user-name" id="username" value={{value}} disabled={{disable}}> <br><br>
+
+<input type="text" name="user-name" id="username" [value]=value [disabled]=disable> -->
+
+<!-- <button (click)="onClick($event)">Greet</button>
+<h3>{{greeting}}</h3> -->
+
+
+<!-- <input type="text" [(ngModel)]="title">
+<h3>{{title}}</h3> -->
+<!-- 
+
+<input type="text" [(ngModel)]="finaldata"><br><br>
+<input type="button" value="send" (click)="sendData()">-->
+
+<!-- <h1>Parent Compoent</h1>
+This data is being fetched from card component::{{value}}
+<app-card  (sendData)="sendData($event)"></app-card> -->
+
+
+<!-- <img [attr.src]="src" alt="" width="500" height="300"> -->
+
+<!-- 
+
+<button (click)="changeColor()">Change Color</button> -->
+
+
+
+
+<!-- <h2 class="stylecolor stylesize">Kindly please like this video</h2>
+<h2 [class]="classes">Kindly please like this video</h2>
+<h2 [class.stylecolor]="booleanValue" [class.stylesize]="booleanValue">Kindly please like this video</h2>
+
+<h2 [ngClass]="objectValue" >Kindly please like this video</h2> -->
+
+<!-- <label for="textbox">Enter Value</label>
+<input type="text" placeholder="enter the value" id="textbox" #val>
+<button (click)="submit(val)">Submit</button>
+<app-card [myValue]="valuesubmit" *ngIf="CardExist">Welcome to Devtown</app-card>
+<br>
+<br>
+<button (click)="Destroy()">Destroy Component</button> -->
+
+<!-- <div #box>
+    <h2>Welcome to {{Name}}</h2> -->
+    <!-- <button (click)="childproperty()">Change Child Property</button><br>
+    <button (click)="childMethod()">Call Child Method</button> -->
+<!-- </div>
+<p #box>Welcome Kushagra this is the Session Of Angular</p>
+<p #box>Welcome Kush this is the Session Of Angular</p>
+<app-card></app-card> -->
+
+
+
+<!-- <app-card>
+    <p #paragraph>This is the Class of Angular</p> 
+    <p #paragraph>This is Devtown Webpage</p>
+    <p #paragraph>This is Devtown Webpage</p>
+
+</app-card> -->
+
+<!-- {{parent()}}
+
+<input type="text" [(ngModel)]="title2">
+
+
+<p *ngIf="title">Welcome to Devtown</p>
+<br>
+<br>
+<select [(ngModel)]="prod">
+    <ng-container *ngFor="let product of Produts">
+        <option [ngValue]="product"> {{product.name}}</option>
+
+    </ng-container>
+
+</select>
+
+<h1 >Product Details {{prod.ID}}</h1>
+
+<div [ngSwitch]="prod.ID">
+    <p *ngSwitchCase="1">{{prod.ID}} {{prod.name}} {{prod.price}}</p>
+    <p *ngSwitchCase="2">{{prod.ID}} {{prod.name}} {{prod.price}}</p>
+    <p *ngSwitchCase="3">{{prod.ID}} {{prod.name}} {{prod.price}}</p>
+    <p *ngSwitchCase="4">{{prod.ID}} {{prod.name}} {{prod.price}}</p>
+    <p *ngSwitchDefault>Product not selected</p>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div [ngStyle]="shape"></div>
+<button (click)="changecolor()">Change Color</button>
+<div [ngClass]="reshape">
+
+</div>
+
+<button (click)="changeshape()">Change Shape</button>
+
+<input type="text" [(ngModel)]="valuetxt">
+
+<button (click)="print()">Print</button> -->
+
+
+<!-- <h1 >Parent Component</h1>
+
+<p *ngIf="isAvalable">This is built In ngIf</p>
+
+<p *appAlternateNgIF="isAvalable">This is coustome ngIf Directive</p>
+
+<button (click)="TisAvalable()">
+    Toggle isAvalable
+</button> -->
+
+<!-- <h1>{{'Parent Component' | uppercase}}</h1>
+<h1>{{'Parent Component' | lowercase}}</h1>
+<h1>{{'Parent Component'}}</h1>
+
+<h2>{{date | date:"h:mm az"}}</h2> -->
+
+<!-- <p>Today is {{today | date:"fullDate"}}</p>
+
+<p>{{"DEVTOWN" |  lowercase}}</p>
+
+<p> {{ "125" | currency:'INR'}}</p>
+
+<p>
+  
+    {{3.4 | number:"1.2-5"}}
+ 
+</p>
+
+  <p> {{ 0.26578910289101558825688696 | percent:"4.2-5"}}</p> -->
+
+
+
+<!-- <input type="number" #val>
+<button (click)="changeValue(val.value)">Add value</button>
+
+<p>₹{{value | iNRDOLL}}</p> -->
+
+
+<!-- <form #loginform="ngForm" (ngSubmit)="Login(loginform.value)">
+   <label for="user-name">Username</label><br>   Username <br>
+    <input type="text" name="user-name" placeholder="@Username" id="user-name" ngModel> <br><br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" id="password" placeholder="*********" ngModel> <br><br>
+    <input type="submit" value="Login">
+
+
+
+</form> -->
+<div class="container">
+    <h2>New User Form</h2>
+
+    <!-- Template Driven Form -->
+    <!-- <form  #LoginForm="ngForm" (ngSubmit)="Login(LoginForm)">
+       
+        <div ngModelGroup="PersonalDeatils" #personalDeatils="ngModelGroup">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input required type="text" name="name" class="form-control" ngModel>
+    
+            </div>
+            
+      
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" class="form-control" ngModel minlength="3" required>
+
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" class="form-control" ngModel required>
+
+        </div>
+        <div *ngIf="personalDeatils.invalid">
+            <small>Some of the required element is Missing</small>
+        </div>
+        </div>
+            
+        <div class="form-group">
+            <label for="user-name">UserName</label>
+            <input type="text" name="user-name" class="form-control" ngModel>
+
+        </div>
+        <div class="form-group">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" name="country" class="form-control" ngModel>
+
+        </div> <br> 
+
+        <div class="radio">
+            <label for="gender" *ngFor="let gender of genders">
+                <input type="radio" name="gender" [value]="gender" ngModel> {{gender}} &nbsp; &nbsp; &nbsp;
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="Communication"> Communication Options</label>
+            <select class="form-control" name="Communication">
+                <option [value]="com" *ngFor="let com of Communications">{{com}}</option>
+            </select>
+        </div>
+
+        <div class="checkbox">
+            <label for="Terms and Condition">
+                <input type="checkbox" name="Terms and Condition"  ngModel> I Agree to the Terms and Condition &nbsp; &nbsp; &nbsp;
+            </label>
+        </div>
+
+
+
+        <pre>
+            {{LoginForm.value | json}}
+        </pre>
+     <button class="btn btn-primary" type="submit" >
+        Submit
+     </button>
+    </form> -->
+
+
+
+  <!-- Reactive Form in Angular -->
+   
+<form  [formGroup]="loginForm" (ngSubmit)="Submit()"> 
+    <div class="form-group mb-3">
+        <label for="name" class="from-label">Name</label>
+        <input type="text" class="form-control" name="name" formControlName="name">
+        <span style="color:red;" *ngIf="name && name.invalid && name.touched">Name feild is not valid</span>
+        <br>
+    </div>
+    <div class="form-group mb-3">
+        <label for="email" class="from-label">Email</label>
+        <input type="email" class="form-control" name="email" formControlName="email">
+        <span style="color:red;" *ngIf="email && email.invalid && email.touched">Email feild is not valid</span>
+        <br>
+    </div>
+    <div class="form-group mb-3">
+        <label for="phone" class="from-label">Phone</label>
+        <input type="number" class="form-control" name="Phone"  formControlName="phone">
+    </div>
+    <div class="form-group mb-3">
+        <label for="user-name" class="from-label">Usename</label>
+        <input type="text" class="form-control" name="usr-name" formControlName="userName">
+    </div>
+    <!-- <div formArrayName="hobbies">
+        
+        <div class="form-group" *ngFor="let hobby of hobbyControls; let i = index">
+            <label for="hobby" class="from-label">Hobby</label>
+          <input type="text" class="form-control" [formControlName]="i" name="hobby">
+        </div>
+        <div>
+            <button type="button" class="btn btn-m btn-warning" (click)="onAddtextbox()">Add text-box</button>
+        </div>
+    </div> -->
+   
+
+    <div class="form-group ">
+        <label for="password" class="from-label">Password</label>
+        <input type="password" class="form-control" name="password" formControlName="password">
+    </div>
+    <button type="submit" class="btn btn-primary mt-4" [disabled]="loginForm.invalid">
+        Submit
+    </button><br><br>
+
+    <button class="btn btn-danger mt-4 pl-2" (click)="reset()">Clear</button>
+</form>
+

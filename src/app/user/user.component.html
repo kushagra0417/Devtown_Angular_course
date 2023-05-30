@@ -1,0 +1,12 @@
+<div class="container" class="row">
+
+<div class="col-md-2"></div>
+<div class="col-md-4">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let user of user">  <a routerLink="./{{user.id}}"> {{user.name}}</a></li>
+    </ul>
+</div>
+<div class="col-md-6">
+  <router-outlet></router-outlet>
+</div>
+</div>
